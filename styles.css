@@ -1,0 +1,110 @@
+body {
+  background-color: rgba(14, 0, 37, 0.911);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: rgba(2, 4, 44, 0.381);
+  width: 67%;
+  height: 60vh;
+  padding: 10px;
+  margin: 180px auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+}
+p:first-of-type {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#discover {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  line-height: 0.8cm;
+  margin-top: -20px;
+}
+#insights {
+  color: rgb(199, 105, 199);
+}
+.min-cont {
+  width: 37%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /* border: 1px solid tomato; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.items {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: serif;
+  /* border: 1px solid greenyellow; */
+}
+.items p:last-of-type {
+  margin-top: -25px;
+}
+.cont-img {
+  width: 50%;
+}
+#cont-img {
+  width: 102%;
+  height: 62.3vh;
+  margin-top: -10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* mix-blend-mode: luminosity; */
+  background-color: blue;
+  opacity: 0.6;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -5%;
+}
+.attribution a {
+  color: rgb(199, 105, 199);
+}
+
+@media only screen and (max-width: 1180px) {
+  .container {
+    width: 50%;
+    height: 150vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+  }
+  .cont-img {
+    width: 100%;
+  }
+  #cont-img {
+    width: inherit;
+    border-radius: 10px 10px 0 0;
+  }
+  .min-cont {
+    width: 80%;
+    text-align: center;
+  }
+  .min-cont p:first-of-type {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .min-cont #discover {
+    margin-right: auto;
+    margin-left: auto;
+    width: 78%;
+    line-height: 0.9cm;
+  }
+  .items {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .attribution {
+  margin-top: -8%;
+  }
+}
+
